@@ -1,0 +1,214 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Variables de Colores */
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+body {
+  background: url('../images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+header {
+  height: 70vh;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content img {
+  padding: 50px 0;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  padding-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  color: var(--Grayish-Blue);
+  padding-bottom: 50px;
+}
+
+.content button {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border-style: none;
+  color: #fff;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.content .ios {
+  background-color: var(--Strong-Cyan);
+  border: var(--Strong-Cyan) 0.3;
+}
+
+.content .ios:hover {
+  box-shadow: 0 3px 0 hsl(171, 70%, 35%);
+  transform: translateY(-2px);
+  transition: 0.5s;
+}
+
+.content .mac {
+  background-color: var(--Light-Blue);
+}
+
+.content .mac:hover {
+  box-shadow: 0 3px 0 hsl(233, 71%, 50%);
+  transform: translateY(-2px);
+  transition: 0.5s;
+}
+
+.content-text {
+  margin: 0 auto;
+  width: 50%;
+}
+
+h2 {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.content-text p {
+  color: var(--Grayish-Blue);
+  font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  margin-bottom: 200px;
+}
+
+.container .content-desktop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container .content-desktop img {
+  position: relative;
+  left: -40px;
+  width: 900px;
+}
+
+.content-desktop-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  width: 50%;
+}
+
+.content-desktop-text h3 {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.content-desktop-text p {
+  color: var(--Grayish-Blue);
+  font-size: 22px;
+}
+
+.clipboard {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clipboard h2 {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.clipboard p {
+  color: var(--Grayish-Blue);
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.clipboard img {
+  display: flex;
+  margin: 60px 0;
+  width: 60%;
+}
+
+.workflow{
+  height: 50vh;
+}
+
+.workflow > p {
+  color: var(--Grayish-Blue);
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content-cards .card{
+  margin-top: 70px;
+  text-align: center;
+  width: 400px;
+}
+
+.content-cards .card img{
+  padding-bottom: 40px;
+}
+
+.content-cards .card h4{
+  color: var(--Dark-Grayish-Blue);
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.content-cards .card p{
+  color: var(--Grayish-Blue);
+  font-size: 18px;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 80%;
+}
