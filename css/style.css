@@ -159,17 +159,248 @@ p {
   height: 250px;
 }
 
-.content-cards .card img{
+.content-cards .card img {
   width: 50px;
   height: 50px;
 }
 
-.content-cards .card h4{
+.content-cards .card h4 {
   font-size: 1.5rem;
   font-weight: 600;
   padding: 30px 0;
 }
 
-.content-cards .card p{
+.content-cards .card p {
   font-size: 1rem;
+}
+
+.empresas {
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  width: 60%;
+  margin: 100px auto 200px;
+}
+
+.content p {
+  margin-bottom: 50px;
+}
+
+/* General footer styling */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los tres bloques */
+  align-items: center; /* Alinea verticalmente al centro */
+  background-color: #f8f9fa; /* Color de fondo gris claro */
+  padding: 20px 50px; /* Espacio alrededor del footer */
+}
+
+/* Logo on the left */
+.footer-left img {
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-left: 100px;
+}
+
+/* Links in the center */
+.footer-center {
+  width: 70%;
+  /* flex-grow: 2; Ocupa el máximo espacio disponible */
+  text-align: left;
+}
+
+.footer-links {
+  list-style-type: none; /* Elimina el estilo de lista por defecto */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px; /* Espacio entre los enlaces */
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  color: var(--Strong-Cyan); /* Subraya los enlaces al pasar el mouse */
+}
+
+/* Social icons on the right */
+.footer-right {
+  display: flex;
+  gap: 30px; /* Espacio entre los íconos */
+  margin-right: 100px;
+}
+
+.footer-icon {
+  width: 24px; /* Tamaño de los íconos */
+  height: auto;
+}
+
+.footer-icon:hover {
+  filter: invert(50%) sepia(50%) saturate(500%) hue-rotate(150deg); /* Aplica filtro de color */
+}
+
+@media (max-width: 600px) {
+  body {
+    background: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  header {
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+  }
+
+  .container-header {
+    width: 100%;
+  }
+
+  .container-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .container-header p {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  .content-button {
+    width: 100%;
+  }
+
+  .content-button button {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .container .content-text {
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .container .content-text p {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .container-desktop .content-image {
+    width: 100%;
+    position: static;
+  }
+
+  .container-desktop .content-image img {
+    width: 90%;
+  }
+
+  .container-desktop .content-desktop-text {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .container-desktop .content-desktop-text .item {
+    width: 100%;
+  }
+
+  .container-desktop .content-desktop-text .item h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-desktop .content-desktop-text .item p {
+    font-size: 1rem;
+  }
+
+  .clipboard {
+    width: 100%;
+  }
+
+  .clipboard img {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .content-cards {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .content-cards .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .content-cards .card img {
+    width: 80px;
+    height: 80px;
+  }
+  .empresas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .empresas img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .content {
+    width: 90%;
+    margin: 100px auto 100px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-left img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin: 20px;
+  }
+
+  .footer-center {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .footer-right {
+    margin: 20px;
+  }
+  .footer-icon {
+    width: 40px;
+    height: auto;
+  }
 }
